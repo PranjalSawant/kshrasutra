@@ -17,10 +17,13 @@ export const Header = () => {
                                 <Link className="nav-link text-green active" aria-current="page" to="/">Home</Link>
                             </li>
                             <li className="nav-item px-2 fw-bold ">
-                                <Link className="nav-link text-green" to="/">About Us</Link>
+                                <Link className="nav-link text-green" to="/about">About Us</Link>
                             </li>
                             <li className="nav-item px-2 fw-bold ">
-                                <Link className="nav-link text-green" to="/">Contact Us</Link>
+                                <Link className="nav-link text-green" to="/contact">Contact Us</Link>
+                            </li>
+                            <li className="nav-item px-2 fw-bold ">
+                                <Link className="nav-link text-green" to="/form">Wellness Predictor</Link>
                             </li>
                             <li className="nav-item px-2 fw-bold  dropdown">
                                 <a className="nav-link text-green dropdown-toggle" href="!#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

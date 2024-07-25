@@ -14,8 +14,8 @@ export const Footer = () => {
                         <h4>Quick Links</h4>
                         <ul className="list-unstyled">
                             <li className='py-1'><Link to="/" className='text-ivory text-decoration-none'>Home</Link></li>
-                            <li className='py-1'><Link to="/" className='text-ivory text-decoration-none'>About Us</Link></li>
-                            <li className='py-1'><Link to="/" className='text-ivory text-decoration-none'>Contact Us</Link></li>
+                            <li className='py-1'><Link to="/about" className='text-ivory text-decoration-none'>About Us</Link></li>
+                            <li className='py-1'><Link to="/contact" className='text-ivory text-decoration-none'>Contact Us</Link></li>
                             <li className='py-1'><Link to="/piles" className='text-ivory text-decoration-none'>Piles (Hemorrhoids)</Link></li>
                             <li className='py-1'><Link to="/fissure" className='text-ivory text-decoration-none'>Anal Fissure</Link></li>
                             <li className='py-1'><Link to="/fistula" className='text-ivory text-decoration-none'>Anal Fistula</Link></li>
@@ -24,17 +24,17 @@ export const Footer = () => {
 
                     </div>
                     <div className="col-lg-3 col-md-6 py-3">
-                        <h4>Follow Us</h4>
+                        <h4>Clinic Timings</h4>
                         <ul className="list-unstyled">
-                            <li className='py-1'><Link to="/" className='text-ivory text-decoration-none'>Facebook</Link></li>
-                            <li className='py-1'><Link to="/" className='text-ivory text-decoration-none'>Instagram</Link></li>
-                            <li className='py-1'><Link to="/" className='text-ivory text-decoration-none'>Twitter</Link></li>
-                            <li className='py-1'><Link to="/piles" className='text-ivory text-decoration-none'>LinkedIn</Link></li>
+                            <li className='py-1'><p className='text-ivory fw-semibold mb-0'>Monday to Saturday</p></li>
+                            <li className='py-1'><p className='text-ivory mb-0'>10:00 am to 1:00 pm</p></li>
+                            <li className='py-1'><p className='text-ivory'>4:30 pm to 6:00 pm</p></li>
+
                         </ul>
                     </div>
                     <div className="col-lg-3 col-md-6 py-3">
                         <h4>Reach Out To Us</h4>
-                        <p>123 Main Street<br />City, State<br />Email: info@example.com<br />Phone: 123-456-7890</p>
+                        <p>Kshara Sutra Hospital<br />Near N.L High School<br />Malad West, Mumbai 400064<br />Phone: +91 9876543210</p>
                     </div>
                     <div className="col-lg-3 col-md-6 py-3">
                         <h4>Disclaimer</h4>

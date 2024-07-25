@@ -61,3 +61,14 @@
 .slick-prev:before, .slick-next:before {
   color: var(--bs-success-rgb) !important;
 }
+.form-control,.form-check-input{
+  border-width: .124rem;
+  border-color: #004D00 !important;
+  background-color: #FFFFF0;
+}
+
+
+.form-check-input:checked {
+  background-color: #004D00;
+  border-color: #004D00;
+}

@@ -11,12 +11,15 @@ import { FistulaPage } from './pages/FistulaPage';
 import { PilonidalPage } from './pages/PilonidalPage';
 import { ContactUsPage } from './pages/ContactUsPage';
 import { Form } from './pages/Form';
+import ScrollToTop from './components/ScrollToTop';
+import { AboutUsPage } from './pages/AboutUsPage';
 
 function App() {
   return (
     <div className='overflow-hidden'>
       <Router>
       <Header/>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/details/:index" component={<Details />} /> */}
@@ -25,6 +28,7 @@ function App() {
           <Route path='/fistula' element={<FistulaPage/>}/>
           <Route path='/pilonidal' element={<PilonidalPage/>}/>
           <Route path='/contact' element={<ContactUsPage/>}/>
+          <Route path='/about' element={<AboutUsPage/>}/>
           <Route path='/form' element={<Form/>}/>
         </Routes>
         <Footer/>
