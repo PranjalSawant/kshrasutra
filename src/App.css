@@ -72,3 +72,11 @@
   background-color: #004D00;
   border-color: #004D00;
 }
+.img-thumbnail {
+  padding: .25rem;
+  background-color: #FFFFF0;
+  border: 2px solid #004D00;
+  border-radius: var(--bs-border-radius);
+  max-width: 100%;
+  height: auto;
+}
