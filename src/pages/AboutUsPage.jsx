@@ -38,9 +38,8 @@ export const AboutUsPage = () => {
                             <div className="col-lg-6 d-flex justify-content-center align-items-center">
                                 <div>
                                     <h4>Dr. Manish M. Kothia, M.S. (Ayu)</h4>
-                                    Dr. Manish M. Kothia is a distinguished Ayurvedic Surgeon specializing in the treatment of anorectal diseases. With a degree of M.S. (Ayu), Dr. Manish has extensive expertise in managing conditions such as Piles, Fissure, Fistula, and Perianal Abscess. His approach integrates the ancient wisdom of Ayurveda with modern surgical techniques, ensuring holistic and effective patient care. Dr. Manish is dedicated to providing personalized treatment plans, promoting healing, and improving the quality of life for his patients.
-
-                                    Inspired by his father, Dr. M.B. Kothia, a renowned Ayurvedic physician with a degree of M.D. (Ayu), Dr. Manish continues the legacy of excellence in Ayurvedic treatment for anorectal diseases.
+                                    <p className='py-2'>Dr. Manish M. Kothia is a distinguished Ayurvedic Surgeon with over 17 years of experience specializing in the treatment of anorectal diseases. With a degree of M.S. (Ayu), Dr. Manish has extensive expertise in managing conditions such as Piles, Fissure, Fistula, and Perianal Abscess. His approach integrates the ancient wisdom of Ayurveda with modern surgical techniques, ensuring holistic and effective patient care. Dr. Manish is dedicated to providing personalized treatment plans, promoting healing, and improving the quality of life for his patients. </p>
+                                    <p>Inspired by his father, Dr. M.B. Kothia, a renowned Ayurvedic physician with a degree of M.D. (Ayu), Dr. Manish continues the legacy of excellence in Ayurvedic treatment for anorectal diseases.</p>
                                 </div>
                             </div>
                             <div className="col-lg-6 d-flex justify-content-center align-items-center">

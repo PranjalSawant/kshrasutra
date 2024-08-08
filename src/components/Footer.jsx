@@ -10,7 +10,7 @@ export const Footer = () => {
                         <Link to='/'><img src={logo} alt="" style={{height:"120px"}} /></Link>
                         <p className='py-4'>At Kshara Sutra Hospital, we specialize in the holistic treatment of anorectal<br/> diseases using ancient Ayurvedic practices. Led by Dr. Manish Kothia, a renowned Ayurvedic practitioner,<br/> our clinic offers personalized care and natural remedies to ensure the best outcomes for our patients.</p>
                     </div>
-                    <div className="col-lg-3 col-md-6 py-3">
+                    <div className="col-lg-2 col-md-6 py-3">
                         <h4>Quick Links</h4>
                         <ul className="list-unstyled">
                             <li className='py-1'><Link to="/" className='text-ivory text-decoration-none'>Home</Link></li>
@@ -23,7 +23,7 @@ export const Footer = () => {
                         </ul>
 
                     </div>
-                    <div className="col-lg-3 col-md-6 py-3">
+                    <div className="col-lg-2 col-md-6 py-3">
                         <h4>Clinic Timings</h4>
                         <ul className="list-unstyled">
                             <li className='py-1'><p className='text-ivory fw-semibold mb-0'>Monday to Saturday</p></li>
@@ -32,11 +32,13 @@ export const Footer = () => {
 
                         </ul>
                     </div>
-                    <div className="col-lg-3 col-md-6 py-3">
-                        <h4>Reach Out To Us</h4>
-                        <p>Kshara Sutra Hospital<br />Near N.L High School<br />Malad West, Mumbai 400064<br />Phone: +91 9876543210</p>
+                    <div className="col-lg-4 col-md-6 py-3">
+                        <h4>Visit Us for Consultations</h4>
+                        <p>Kshara Sutra Hospital<br />Near N.L High School<br />Malad West, Mumbai 400064<br />Phone: +91 9324499061</p>
+                        <h4>Surgeries Take Place Here</h4>
+                        <p>Shri Bala Hanuman Mat. & Surgical Hospital<br />C-113, Lancelot Building, S.V Road<br />Borivali West, Mumbai 400092<br />Phone: +91 9324499061</p>
                     </div>
-                    <div className="col-lg-3 col-md-6 py-3">
+                    <div className="col-lg-4 col-md-6 py-3">
                         <h4>Disclaimer</h4>
                         <p>The information about anorectal diseases provided on this website is for educational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health providers with any questions you may have regarding a medical condition.</p>
                     </div>

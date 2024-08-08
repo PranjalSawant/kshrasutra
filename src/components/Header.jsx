@@ -1,12 +1,12 @@
 import React from 'react'
-import Logo from '../assets/logo.png'
+import Logo from '../assets/logo2.png'
 import { Link } from 'react-router-dom'
 export const Header = () => {
     return (
             <nav className="container-fluid navbar navbar-expand-lg fixed-top bg-ivory">
                 <div className="container ">
                     <Link className="navbar-brand" to="/">
-                        <img src={Logo} alt="" className='w-100' style={{height:"100px"}}/>
+                        <img src={Logo} alt="" className='w-100' style={{height:"auto",width:"auto",maxHeight:"120px",maxWidth:'100%'}}/>
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

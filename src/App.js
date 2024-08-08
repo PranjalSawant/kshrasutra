@@ -13,6 +13,7 @@ import { ContactUsPage } from './pages/ContactUsPage';
 import { Form } from './pages/Form';
 import ScrollToTop from './components/ScrollToTop';
 import { AboutUsPage } from './pages/AboutUsPage';
+import { Results } from './pages/ResultsPage';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='/contact' element={<ContactUsPage/>}/>
           <Route path='/about' element={<AboutUsPage/>}/>
           <Route path='/form' element={<Form/>}/>
+          <Route path='/results' element={<Results/>}/>
         </Routes>
         <Footer/>
       </Router>
