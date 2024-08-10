@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Questions from '../components/Questions';
-import { Button } from '../components/Button';
 import { Title } from '../components/Title';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import submitInfo from '../Config';
+import predictResult from '../Config';
 
 // const questions = [
 //   {
@@ -332,8 +332,7 @@ export const Form = () => {
     try {
       console.log('Submitting form data:', formValues);
   
-      // Step 1: Submit the form data to the database
-      const submitResponse = await fetch('https://render-clinic-1ahv.onrender.com/api/submit/', {
+      const submitResponse = await fetch(submitInfo, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -350,7 +349,7 @@ export const Form = () => {
       console.log('Form data submitted successfully:', submitData);
   
       // Step 2: Fetch the results from the prediction endpoint
-      const resultResponse = await fetch('https://render-clinic-1ahv.onrender.com/api/predict/', {
+      const resultResponse = await fetch(predictResult, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
