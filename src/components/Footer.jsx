@@ -34,13 +34,13 @@ export const Footer = () => {
                     </div>
                     <div className="col-lg-4 col-md-6 py-3">
                         <h4>Visit Us for Consultations</h4>
-                        <p>Kshara Sutra Hospital<br />Near N.L High School<br />Malad West, Mumbai 400064<br />Phone: +91 9324499061</p>
+                        <p>Kshara Sutra Hospital<br />Near N.L High School<br />Malad West, Mumbai 400064<br />Phone: +91 8928054361</p>
                         <h4>Surgeries Take Place Here</h4>
-                        <p>Shri Bala Hanuman Mat. & Surgical Hospital<br />C-113, Lancelot Building, S.V Road<br />Borivali West, Mumbai 400092<br />Phone: +91 9324499061</p>
+                        <p>Shri Bala Hanuman Mat. & Surgical Hospital<br />C-113, Lancelot Building, S.V Road<br />Borivali West, Mumbai 400092</p>
                     </div>
                     <div className="col-lg-4 col-md-6 py-3">
                         <h4>Disclaimer</h4>
-                        <p>The information about anorectal diseases provided on this website is for educational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health providers with any questions you may have regarding a medical condition.</p>
+                        <p>The content about anorectal diseases provided on this website is for informative purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your doctor or other qualified health providers with any questions you may have regarding a medical condition.</p>
                     </div>
                 </div>
             </div>

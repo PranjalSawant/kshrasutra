@@ -2,6 +2,7 @@ import React from 'react'
 import { Title } from './Title'
 import { Button } from './Button'
 import Abt from '../assets/abt.jpg'
+import { Link } from 'react-router-dom'
 export const AboutSection = () => {
     return (
         <div className='bg-green text-ivory p-5'>
@@ -19,7 +20,9 @@ export const AboutSection = () => {
             </div>
             <div className="d-flex">
                 <div className="mx-auto">
+                    <Link to="/about">
                     <Button btnText="Learn More About Our Approach" bgColor="btn-outline-success"></Button>
+                    </Link>
                 </div>
             </div>
         </div>

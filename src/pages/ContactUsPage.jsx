@@ -21,7 +21,7 @@ export const ContactUsPage = () => {
                 <p><span className='fw-semibold'>Monday - Saturday</span><br/> 10:00 AM - 1:00 PM <br/> 4:30 PM - 6:00 PM</p>
                 <p className='fw-semibold'>Sunday Closed</p>
                 <h4 className='fw-semibold pt-4'><i>Phone Number</i></h4>
-                <p>(+91) 9324499061</p>
+                <p>(+91) 8928054361</p>
                 <h4 className='fw-semibold pt-4'><i>For Appointments and Consultations</i></h4>
                 <p className='mb-0'>Kshara Sutra Hospital</p>
                 <p className='mb-0'>Near N.L High School</p>

@@ -11,6 +11,7 @@ const Questions = ({ id, text, type, options, value, onChange, onBlur, error }) 
           value={value}
           onChange={(e) => onChange(id, e.target.value)}
           onBlur={() => onBlur(id)}
+          required
         />
       )}
 
@@ -26,6 +27,7 @@ const Questions = ({ id, text, type, options, value, onChange, onBlur, error }) 
                 value={option}
                 checked={value === option}
                 onChange={(e) => onChange(id, e.target.value)}
+                required
               />
               <label htmlFor={`${id}-${option}`} className='form-check-label'>{option}</label>
             </div>

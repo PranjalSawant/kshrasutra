@@ -1,8 +1,9 @@
 import React from 'react'
-import dr from '../assets/dr-kothia2.png'
+import dr from '../assets/dr1.png'
 import whatwedo from "../assets/Doctors.png"
 import { Title } from '../components/Title'
 import { SliderSection } from '../components/Slider'
+import { Achievements } from '../components/AchievementSlider'
 export const AboutUsPage = () => {
     return (
         <div className=' bg-ivory'>
@@ -44,7 +45,7 @@ export const AboutUsPage = () => {
                             </div>
                             <div className="col-lg-6 d-flex justify-content-center align-items-center">
                                 <div className=" text-center">
-                                    <img src={dr} className="img-fluid img-thumbnail rounded w-50" />
+                                    <img src={dr} className="img-fluid img-t humbnail rounded w-75 " />
                                 </div>
                             </div>
                         </div>
@@ -52,7 +53,15 @@ export const AboutUsPage = () => {
 
                 </div>
             </div>
+            <div className="py-5"></div>
+            <div>
+                <div className="text-green py-5">
+                    <Title title="Achievements" />
+                    <Achievements/>
+                </div>
+            </div>
             <div className="py-5">
+                
                 <SliderSection />
             </div>
         </div>
