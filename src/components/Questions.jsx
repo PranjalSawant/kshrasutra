@@ -6,7 +6,7 @@ const Questions = ({ id, text, type, options, value, onChange, onBlur, error }) 
       {type === 'text' && (
         <input
           type="text"
-          className={`form-control bg-transparent text-green fw-bold ${error ? 'is-invalid' : ''}`}
+          className={`form-control mx-2 bg-transparent text-green fw-bold ${error ? 'is-invalid' : ''}`}
           id={id}
           value={value}
           onChange={(e) => onChange(id, e.target.value)}

@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo-green.png'
 export const Footer = () => {
-    return (
-        <footer className="bg-green text-ivory p-5">
+    return ( 
+        <footer className="bg-green text-ivory p-md-5 p-2">
             <div className="container py-5">
                 <div className="row">
                     <div className="col-md-12 pb-5">

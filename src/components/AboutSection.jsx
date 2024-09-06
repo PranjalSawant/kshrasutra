@@ -5,25 +5,26 @@ import Abt from '../assets/abt.jpg'
 import { Link } from 'react-router-dom'
 export const AboutSection = () => {
     return (
-        <div className='bg-green text-ivory p-5'>
-            <div className="py-5"></div>
+        <div className='bg-green text-ivory p-md-5 p-2'>
+            <div className="py-md-5 py-3">
             <Title title="What do we do?" />
-            <div className='container py-5'>
+            <div className='container py-md-5'>
                 <div className="row">
                     <div className="col-lg-6">
                         <div className='pb-lg-0 pb-5'>
                             <img src={Abt} className='img-fluid w-100 rounded-4' alt="" />
                         </div>
                     </div>
-                    <div className="col-lg-6 d-flex align-items-center lh-base fs-md-5 px-lg-5">At Dr. Manish Kothia's Ayurvedic Sanctuary, we believe that true healing begins with addressing the root cause of imbalance, rather than merely treating symptoms. Our comprehensive approach to wellness encompasses personalized consultations, therapeutic treatments, herbal remedies, lifestyle guidance, and more. Whether you seek relief from chronic ailments, rejuvenation of mind and body, or simply a path to greater vitality, our team is dedicated to crafting a unique journey toward optimal health and well-being. Experience the transformative power of Ayurveda and embark on a path to holistic harmony with us.</div>
+                    <div className="col-lg-6 d-flex align-items-center lh-base fs-md-5 px-lg-5 pb-3">At Dr. Manish Kothia's Ayurvedic Sanctuary, we believe that true healing begins with addressing the root cause of imbalance, rather than merely treating symptoms. Our comprehensive approach to wellness encompasses personalized consultations, therapeutic treatments, herbal remedies, lifestyle guidance, and more. Whether you seek relief from chronic ailments, rejuvenation of mind and body, or simply a path to greater vitality, our team is dedicated to crafting a unique journey toward optimal health and well-being. Experience the transformative power of Ayurveda and embark on a path to holistic harmony with us.</div>
                 </div>
             </div>
-            <div className="d-flex">
+            <div className="d-flex mb-3">
                 <div className="mx-auto">
                     <Link to="/about">
                     <Button btnText="Learn More About Our Approach" bgColor="btn-outline-success"></Button>
                     </Link>
                 </div>
+            </div>
             </div>
         </div>
     )

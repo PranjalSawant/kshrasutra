@@ -81,12 +81,19 @@ export const PilonidalPage = () => {
                         <div className="">
                             <h5 className='fw-bold py-2'>Treatment : </h5>
                             <ul>
-                                <li className='py-1'><b>Incision and drainage:</b> If the sinus is infected, a healthcare provider may need to make an incision to drain pus and debris from the abscess.
+                                <li className='py-1'><b>Application of Ksharasutra:</b> A medicated thread (Ksharasutra) is carefully inserted into the pilonidal sinus tract. The thread, coated with herbal alkaline substances, gradually works to drain the sinus and cut through the tract, promoting healing from within.
+
 </li>
-                                <li className='py-1'><b>Antibiotics:</b> In cases of infection, antibiotics may be prescribed to treat the bacterial infection.
+                                <li className='py-1'><b>Periodic Thread Change:
+                                </b> The Ksharasutra thread is periodically changed (usually every week) to ensure continuous drainage and healing. This process is repeated until the entire sinus tract is healed, which typically takes a few weeks.
+
 </li>
-                                <li className='py-1'><b>Laser hair removal or shaving:</b> To prevent recurrence, hair removal methods may be used to reduce hair in the affected area.</li>
-                                <li className='py-1'><b>Surgical excision:</b> For recurrent or chronic cases, surgical removal of the sinus tract and surrounding tissue may be necessary.
+                                <li className='py-1'><b>Herbal Support and Care:
+                                </b> Ayurvedic herbs may be used alongside the Ksharasutra treatment to enhance healing. Herbal ointments and oral medications may be prescribed to reduce inflammation and promote tissue repair.
+                                </li>
+                                <li className='py-1'><b>Minimal Invasive Procedure:
+                                </b> The Ksharasutra technique is minimally invasive, causing less pain and scarring compared to traditional surgery. It also significantly reduces the chances of recurrence.
+
 </li>
                             </ul>
                         </div>

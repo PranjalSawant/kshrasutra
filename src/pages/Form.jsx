@@ -14,21 +14,21 @@ const questions = [
   { id: "job_nature", text: "What is the nature of your job", type: "radio", options: ["Sitting", "Standing", "Combined", "Travelling", "All"] },
   { id: "lift_heavy_weights", text: "Do you lift heavy weights?", type: "radio", options: ["Yes", "No"] },
   { id: "use_devices_often", text: "Do you use Laptop / PC / Mobile often?", type: "radio", options: ["Yes", "No", "Not so often"] },
-  { id: "sitting_hours", text: "How many hours do you spend sitting in a day?", type: "radio", options: ["4 - 6 hrs", "6 - 8 hrs", "8 - 10 hrs", "Less than 4hrs", "More than 10 hrs"] },
+  { id: "sitting_hours", text: "How many hours do you spend sitting in a day?", type: "radio", options: ["4 - 6 hrs", "6 - 8 hrs", "8 - 10 hrs", "Less than 4 hrs", "More than 10 hrs"] },
   { id: "fast_food_frequency", text: "How often do you consume fast food / junk food?", type: "radio", options: ["Daily", "Once a week", "Twice a week", "Thrice a week", "Rarely"] },
   { id: "consume_oily_spicy_food", text: "Do you consume oily/spicy food?", type: "radio", options: ["No", "Yes"] },
   { id: "dinner_time", text: "At what time do you have your dinner?", type: "radio", options: ["Before 7pm", "Between 7 to 9 pm", "Between 9 to 10 pm", "After 10pm"] },
   { id: "digestion_problems", text: "Do you face any digestion-related problems like constipation(hard stools)?", type: "radio", options: ["No", "Yes"] },
   { id: "stool_frequency", text: "How often do you pass stools in a day?", type: "radio", options: ["Once a day", "Twice a day", "3 to 4 times a day", "Completely stopped"] },
-  { id: "buttock_pain", text: "When does it pain in the buttock/anal region?", type: "radio", options: ["None", "Throughout the day", "While passing stools"] },
+  { id: "buttock_pain", text: "When does it pain in the buttock/anal region?", type: "radio", options: ["None", "Throughout the day", "While passing stool"] },
   { id: "cutting_pain", text: "Do you experience cutting pain at the anal region during passing stools?", type: "radio", options: ["Yes", "No"] },
   { id: "burning_sensation", text: "Do you experience burning sensation at the anal region while passing stools or after defecation?", type: "radio", options: ["Yes", "No"] },
   { id: "itching", text: "Do you experience itching at the anal region during passing stools or after defecation?", type: "radio", options: ["Yes", "No"] },
   { id: "pile_mass_coming_out", text: "While passing stools, is the pile mass coming out?", type: "radio", options: ["Yes", "No"] },
-  { id: "pile_mass_condition", text: "What is the condition of the pile mass?", type: "radio", options: ["Always lying outside", "Goes inside after a while"] },
+  { id: "pile_mass_condition", text: "What is the condition of the pile mass?", type: "radio", options: ["Always lying outside", "Goes inside after a while", "None"] },
   { id: "bleeding_issue", text: "While passing stools, is there any bleeding issue?", type: "radio", options: ["Yes", "No"] },
   { id: "bleeding_type", text: "How is the bleeding?", type: "radio", options: ["In the form of drops", "Continuous Flow", "Sticking with stool", "None"] },
-  { id: "bleeding_amount", text: "What is the amount of bleeding approximately?", type: "radio", options: ["Less than 1 spoon", "More than 1 spoon"] },
+  { id: "bleeding_amount", text: "What is the amount of bleeding approximately?", type: "radio", options: ["Less than 1 spoon", "More than 1 spoon", "None"] },
   { id: "blood_color", text: "What is the color of the blood coming from the anus?", type: "radio", options: ["Red", "Brown", "None"] },
   { id: "pus_discharge", text: "Is there any pus(sticky white color) discharge while passing the stools/ from the anus ?", type: "radio", options: ["Yes", "No"] },
   { id: "boils_around_anus", text: "Do you have boils around the anus region ?", type: "radio", options: ["Yes", "No"] },
@@ -49,6 +49,13 @@ const questions = [
   { id: "family_anal_cancer", text: "Does anyone in your family have anal cancer, especially from the maternal side?", type: "radio", options: ["Yes", "No"] },
   { id: "first_time_doctor_visit", text: "Are you visiting to the doctor first time?", type: "radio", options: ["Yes", "No"] }
 ];
+const Loader = () => (
+  <div className="loader">
+    <div className="spinner-border text-success" role="status">
+      <span className="sr-only"></span>
+    </div>
+  </div>
+);
 
 export const Form = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -95,6 +102,46 @@ export const Form = () => {
     }
   };
 
+  // const handleSubmit = async () => {
+  //   if (!validatePage()) return;
+
+  //   setLoading(true);
+  //   setErrorMessage('');
+  //   try {  
+  //     const submitResponse = await fetch(submitInfo, {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(formValues),
+  //       mode: 'cors', 
+  //     });
+  
+  //     if (!submitResponse.ok) {
+  //       throw new Error('Error submitting form data');
+  //     }
+  //     const resultResponse = await fetch(predictResult, {
+  //       method: 'GET',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       mode: 'cors',
+  //     });
+  
+  //     if (!resultResponse.ok) {
+  //       throw new Error('Error fetching results');
+  //     }
+  
+  //     const resultData = await resultResponse.json();
+  
+  //     navigate('/results', { state: { results: resultData } });
+  //   } catch (error) {
+  //     setErrorMessage('An error occurred. Please try again later.');
+  //     console.error('Error:', error);
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
   const handleSubmit = async () => {
     if (!validatePage()) return;
 
@@ -129,13 +176,13 @@ export const Form = () => {
   
       navigate('/results', { state: { results: resultData } });
     } catch (error) {
-      setErrorMessage('An error occurred. Please try again later.');
+      setErrorMessage('An error occurred. Please try again later and make sure to fill out all fields in the form');
       console.error('Error:', error);
     } finally {
       setLoading(false);
     }
   };
-  
+
 
   const handleNext = () => {
     if (!validatePage()) return;  
@@ -197,6 +244,8 @@ export const Form = () => {
             )}
           </div>
         </form>
+        {loading && <Loader />}
+        {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
       </div>
     </div>
   )

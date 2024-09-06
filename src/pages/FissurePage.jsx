@@ -76,16 +76,21 @@ export const FissurePage = () => {
                         <div className="">
                             <h5 className='fw-bold py-2'>Treatment : </h5>
                             <ul>
-                                <li className='py-1'><b>Topical ointments or creams: </b>Over-the-counter or prescription creams containing calcium channel blockers or nitroglycerin to relax the anal sphincter and promote healing.
-</li>
-                                <li className='py-1'><b>Sitz baths:</b> Soaking the anal area in warm water for 10-15 minutes several times a day to relieve pain and promote healing.</li>
-                                <li className='py-1'><b>Dietary changes:</b> Increasing fiber intake and drinking plenty of water to soften stools and reduce strain during bowel movements.
-</li>
-                                <li className='py-1'><b>Botulinum toxin injection:</b> Injections into the anal sphincter to relax the muscle and promote healing in chronic fissures.
-</li>
-<li className='py-1'><b>Surgical sphincterotomy:</b> In severe or chronic cases, a surgical procedure to cut the internal anal sphincter muscle to reduce spasm and promote healing.
+                                <li className='py-1'><b> Application of Ksharasutra:
+                                </b> A medicated thread (Ksharasutra), coated with herbal preparations, is applied to the fissure site. The thread gradually releases its medicinal properties, promoting healing while preventing infection.
 
 </li>
+                                <li className='py-1'><b>Herbal Sitz Baths:
+                                </b> Sit in a warm water bath infused with Ayurvedic herbs like Triphala or Neem for 10-15 minutes to soothe the affected area, reduce pain, and accelerate healing.
+                                </li>
+                                <li className='py-1'><b>Dietary changes:</b> Incorporate a high-fiber diet with plenty of water to ensure soft stools, reducing strain during bowel movements and preventing further irritation.
+
+</li>
+                                <li className='py-1'><b> Topical Ayurvedic Ointments:
+                                </b> Apply Ayurvedic herbal ointments or oils such as Jatyadi oil to the fissure to reduce inflammation and support the natural healing process.
+
+</li>
+
                             </ul>
                         </div>
                     </div>

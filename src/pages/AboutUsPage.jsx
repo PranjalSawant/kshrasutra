@@ -3,7 +3,7 @@ import dr from '../assets/dr1.png'
 import whatwedo from "../assets/Doctors.png"
 import { Title } from '../components/Title'
 import { SliderSection } from '../components/Slider'
-import { Achievements } from '../components/AchievementSlider'
+import { KsharasutraInfo } from '../components/KsharasutraInfo'
 export const AboutUsPage = () => {
     return (
         <div className=' bg-ivory'>
@@ -15,7 +15,7 @@ export const AboutUsPage = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 d-flex">
-                        <img src={whatwedo} className='img-fluid m-auto' />
+                        <img src={whatwedo} className='img-fluid m-auto' alt='img'/>
                     </div>
                     <div className="col-lg-6 text-green">
                         <p className='py-3'>
@@ -45,7 +45,7 @@ export const AboutUsPage = () => {
                             </div>
                             <div className="col-lg-6 d-flex justify-content-center align-items-center">
                                 <div className=" text-center">
-                                    <img src={dr} className="img-fluid img-t humbnail rounded w-75 " />
+                                    <img src={dr} className="img-fluid img-t humbnail rounded w-75 " alt='img' />
                                 </div>
                             </div>
                         </div>
@@ -56,8 +56,7 @@ export const AboutUsPage = () => {
             <div className="py-5"></div>
             <div>
                 <div className="text-green py-5">
-                    <Title title="Achievements" />
-                    <Achievements/>
+                    <KsharasutraInfo/>
                 </div>
             </div>
             <div className="py-5">

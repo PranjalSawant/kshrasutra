@@ -74,13 +74,13 @@ export const PilesPage = () => {
                             <ul>
                                 <li className='py-1'><b>Dietary changes:</b> Increasing fiber intake to soften stools and prevent straining during bowel movements.
                                 </li>
-                                <li className='py-1'><b>Topical treatments:</b> Over-the-counter creams, ointments, or suppositories to reduce pain, itching, and inflammation.
+                                <li className='py-1'><b>Topical treatments:</b>Use herbal creams and suppositories to reduce pain, itching, and inflammation.
                                 </li>
-                                <li className='py-1'><b>Sclerotherapy or banding:</b> In-office procedures to shrink hemorrhoids by cutting off their blood supply.
+                                <li className='py-1'><b>Ksharasutra Therapy:</b>Apply a medicated thread (Ksharasutra) to the base of the hemorrhoid, cutting off its blood supply and causing it to shrink and fall off naturally.
                                 </li>
-                                <li className='py-1'><b>Rubber band ligation:</b> A procedure where a rubber band is placed around the base of the hemorrhoid to cut off its blood supply, causing it to shrink and fall off.
+                                <li className='py-1'><b>Herbal Sclerotherapy:</b> Use herbal injections to shrink hemorrhoids by reducing their blood supply.
                                 </li>
-                                <li className='py-1'><b>Hemorrhoidectomy:</b> Surgical removal of hemorrhoids, usually reserved for severe cases that do not respond to other treatments.
+                                <li className='py-1'><b>Kshara Karma (Surgical Alternative):</b> Apply a specialized alkaline paste to remove severe hemorrhoids safely.
 
                                 </li>
                             </ul>

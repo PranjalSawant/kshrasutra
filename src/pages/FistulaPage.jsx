@@ -88,24 +88,20 @@ export const FistulaPage = () => {
                         <div className="">
                             <h5 className='fw-bold py-2'>Treatment : </h5>
                             <ul>
-                                <li className='py-1'><b>Incision and Drainage:</b>If there is an associated abscess, the first step is often to drain the abscess surgically to relieve pain and prevent further infection.
+                                <li className='py-1'><b>Insertion of Ksharasutra:</b> A medicated thread (Ksharasutra) is inserted into the fistula, cutting and draining it while promoting healing.
                                 </li>
-                                <li className='py-1'><b>Seton Placement:</b>A seton is a thread-like material (often made of silk or rubber) that is inserted into the fistula tract to keep it open and allow for continuous drainage. This helps prevent the formation of new abscesses and promotes healing.
+                                <li className='py-1'><b> Periodic Thread Replacement:
+                                </b>The thread is changed weekly until the fistula is fully healed, gradually cutting through the tract.
                                 </li>
-                                <li className='py-1'><b>Fistulotomy:</b>This surgical procedure involves cutting open the entire length of the fistula tract to remove it completely. It is usually reserved for simple, superficial fistulas that do not involve the sphincter muscles.
+                                <li className='py-1'><b> Minimally Invasive:
+                                </b>The procedure is minimally invasive, preserving sphincter muscles and reducing the risk of incontinence.
                                 </li>
-                                <li className='py-1'><b>Fistulectomy:</b>Similar to fistulotomy, fistulectomy involves surgically removing the entire fistula tract. However, this procedure may be more extensive and involve removing surrounding tissue as well.</li>
-                                <li className='py-1'><b>LIFT Procedure (Ligation of the Intersphincteric Fistula Tract):</b>This minimally invasive procedure involves identifying and ligating (tying off) the internal opening of the fistula tract while preserving the anal sphincter muscles.
-                                </li>
-                                <li className='py-1'><b>Advancement Flap Repair:</b>In this procedure, tissue from the inside of the rectum is used to cover and close the internal opening of the fistula, promoting healing.
+                                <li className='py-1'><b>Fistulectomy:</b> Similar to fistulotomy, fistulectomy involves surgically removing the entire fistula tract. However, this procedure may be more extensive and involve removing surrounding tissue as well.</li>
+                                <li className='py-1'><b>Herbal Support:
+                                </b> Ayurvedic herbs may be used alongside to enhance healing and reduce inflammation.
 
                                 </li>
-                                <li className='py-1'><b>Fibrin Glue Injection:</b>Fibrin glue is injected into the fistula tract to seal it off and promote healing. This is typically used for low-risk, superficial fistulas.
-
-                                </li>
-                                <li className='py-1'><b>Biological Plugs:</b>Biological plugs made from materials such as porcine collagen are sometimes used to seal the internal opening of the fistula and promote healing.</li>
-                                <li className='py-1'><b>Antibiotics:</b>Antibiotics may be prescribed to treat or prevent infection, particularly if there is an associated abscess or if surgery is performed.
-                                </li>
+                              
                             </ul>
                         </div>
                     </div>

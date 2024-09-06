@@ -11,6 +11,9 @@ export const Results = () => {
     <div className='bg-ivory'>
       <div className="container mt-4">
       <div className="py-5"></div>
+      <div className="py-md-5"></div>
+      <div className="py-5"></div>
+    
             <div className="py-3"></div>
             <div className="text-green">
                 <Title title="Wait is over! Here are your results" />
@@ -30,7 +33,7 @@ export const Results = () => {
             ))}
           </div>
         ) : (
-          <div>No results available</div>
+          <div className='py-2 text-center'>No results available</div>
         )}
       </div>
     </div>

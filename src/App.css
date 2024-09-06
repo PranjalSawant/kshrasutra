@@ -97,3 +97,24 @@
   .div7 { grid-area: 3 / 1 / 5 / 3; }
   .div8 { grid-area: 3 / 3 / 5 / 5; }
   .div9 { grid-area: 3 / 5 / 5 / 7; }
+  
+  .loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  
+  .spinner-border {
+    width: 3rem;
+    height: 3rem;
+  }
+  .dropdown-item:hover{
+    background-color: #004D00;
+    color: #FFFFF0;
+
+  }
+  .dropdown-menu{
+    border: 1px solid #004D00;
+  }

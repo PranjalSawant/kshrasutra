@@ -13,9 +13,10 @@ export const ContactUsPage = () => {
         <div className="row">
           <div className="col-lg-7">
             <MapComponent />
+            
           </div>
           <div className="col">
-            <div className="d-flex align-items-center text-green ps-5">
+            <div className="d-flex align-items-center text-green ps-md-5">
               <div>
                 <h4 className='fw-semibold pt-4'><i>Clinic Timings </i></h4>
                 <p><span className='fw-semibold'>Monday - Saturday</span><br/> 10:00 AM - 1:00 PM <br/> 4:30 PM - 6:00 PM</p>

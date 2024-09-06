@@ -1,31 +1,32 @@
-import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
-
-// Fix for the default marker icon not being displayed
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png',
-  iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
-  shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
-});
-
 const MapComponent = () => {
-  const position = [19.1867, 72.8424]; // Coordinates for Kshara Sutra Hospital
-
+  
   return (
-    <MapContainer center={position} zoom={13} style={{ height: "100%", width: "100%", borderRadius:"10px" }}>
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
-      <Marker position={position}>
-        <Popup>
-          Kshara Sutra Hospital, Near N.L High School, Malad West, Mumbai 400064.
-        </Popup>
-      </Marker>
-    </MapContainer>
+    <div style={{ overflow: 'hidden', resize: 'none', maxWidth: '100%', width: '100%', height: '100%' }}>
+      <div id="my-map-canvas" style={{ height: '100%', width: '100%', maxWidth: '100%' }}>
+        <iframe
+          style={{ height: '100%', width: '100%', border: '0' }}
+          frameBorder="0"
+          src="https://www.google.com/maps/embed/v1/place?q=Kshara+Sutra+Hospital+Near+N.L+High+School+Malad+West,+Mumbai+400064&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+          allowFullScreen
+        ></iframe>
+      </div>
+      <a
+        className="embed-ded-maphtml"
+        href="https://www.bootstrapskins.com/themes"
+        id="make-map-data"
+      >
+        premium bootstrap themes
+      </a>
+      <style>
+        {`
+          #my-map-canvas img {
+            max-height: none;
+            max-width: none !important;
+            background: none !important;
+          }
+        `}
+      </style>
+    </div>
   );
 };
 
