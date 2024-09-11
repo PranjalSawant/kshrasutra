@@ -1,7 +1,9 @@
 :root {
   --bs-success-rgb: rgb(0, 77, 0);
 }
-
+body{
+  text-align: justify;
+}
 .bg-green {
   background-color: var(--bs-success-rgb);
 }
@@ -118,3 +120,58 @@
   .dropdown-menu{
     border: 1px solid #004D00;
   }
+  /* .form-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .questions-container {
+    flex-grow: 1;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative; 
+  }
+
+  @media (max-width: 768px) {
+    .button-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .button-container button {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  } */
+  .form {
+    height: 50vh; 
+  }
+  
+  @media (max-width: 992px) {
+    .form {
+      height: 40vh; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .form {
+      height: 45vh; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .form {
+      height: 40vh; 
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .form {
+      height: 45vh; 
+    }
+  }
+  

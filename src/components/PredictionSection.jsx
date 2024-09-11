@@ -11,7 +11,7 @@ export const PredictionSection = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 d-flex align-items-center justify-content-center">
-                            <p className='p-md-5 fs-5 fw-semibold text-ivory'>Uncover your unique health profile with our Ayurvedicprediction form. Answer a few simple questions to receive personalized recommendations for your wellness journey.<br /> <br /> Whether you're seeking to balance your doshas, improve your digestive health, or find natural solutions to chronic issues, our prediction form is your first step toward holistic well-being. Begin your journey with us and unlock the secrets to a healthier, happier you.</p>
+                            <p className='fs-5  text-ivory'>Uncover your unique health profile with our Ayurvedic prediction form. Answer a few simple questions to receive personalized recommendations for your wellness journey.<br /> <br /> Whether you're seeking to balance your doshas, improve your digestive health, or find natural solutions to chronic issues, our prediction form is your first step toward holistic well-being. Begin your journey with us and unlock the secrets to a healthier, happier you.</p>
                         </div>
                         <div className="col-lg-6 d-flex align-items-center justify-content-center">
                             <img src={Predict} alt="" className='img-fluid ' />

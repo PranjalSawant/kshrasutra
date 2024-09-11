@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Questions from '../components/Questions';
 import { Title } from '../components/Title';
 import { useNavigate } from 'react-router-dom';
@@ -63,10 +63,31 @@ export const Form = () => {
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [questionsPerPage, setQuestionsPerPage] = useState(4); // Default number of questions per page
   const navigate = useNavigate();
-  const questionsPerPage = 4;
   const totalPages = Math.ceil(questions.length / questionsPerPage);
 
+  // Adjust questions per page based on screen size
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 576) {
+        setQuestionsPerPage(2); // For mobile screens
+      } else if (window.innerWidth < 768) {
+        setQuestionsPerPage(3); // For tablets
+      } else {
+        setQuestionsPerPage(3); // Default for larger screens
+      }
+    };
+
+    // Set initial value
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   const handleChange = (id, value) => {
     setFormValues({
       ...formValues,
@@ -203,14 +224,14 @@ export const Form = () => {
   );
 
   return (
-    <div className="bg-ivory">
+    <div className="bg-ivory" >
       <div className='container mt-4 '>
         <div className="py-5"></div>
         <div className="py-3"></div>
-        <div className='text-green'>
+        <div className='text-green pt-md-5'>
         <Title title="Start your Wellness Assessment" />
         </div>
-        <form>
+        <form className='form'>
           {currentQuestions.map((question) => (
             <div className='row' key={question.id}>
               <Questions
@@ -225,8 +246,8 @@ export const Form = () => {
               />
             </div>
           ))}
-
-          <div className='d-flex py-4'>
+  </form>
+          <div className='container d-flex py-4'>
             {currentPage > 0 && (
               <button type='button' className='btn btn-outline-success border-success' onClick={handlePrev}>
                 Previous
@@ -243,9 +264,10 @@ export const Form = () => {
               </button>
             )}
           </div>
-        </form>
+      
         {loading && <Loader />}
-        {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
+        {errorMessage && <div className="alert alert-danger mb-0">{errorMessage}</div>}
+        <div className="py-2"></div>
       </div>
     </div>
   )
